@@ -1,0 +1,27 @@
+<div class="banner">Beyblade Match Maker</div>
+<div class="container">
+  <div class="sidebar">
+    <button class="menu-button" (click)="toggleList()">Match</button>
+    <div *ngIf="isListVisible" class="sub-list">
+      <button class="sub-button" (click)="toggleOngoingMatchPanel()">Ongoing Match</button>
+      <button class="sub-button" (click)="toggleCreateMatchPanel()">Create Match</button>
+      <button class="sub-button">History</button>
+      <button class="sub-button" (click)="triggerMethod()">TEST BUTTON</button>
+    </div>
+    <button class="menu-button">Button 2</button>
+    <button class="menu-button">Button 3</button>
+  </div>
+
+  <div class="content">
+    <div *ngIf="isOngoingMatchVisible" class="match-dashboard-panel">
+      <h2>DASHBOARD</h2>
+      <ongoing-match [p1Name]="p1.alias" [p2Name]="p2.alias" [p1Bey]="bey1" [p2Bey]="bey2">
+      </ongoing-match>
+    </div>
+    <div *ngIf="isCreateMatchVisible" class="match-dashboard-panel">
+      <h2>DASHBOARD</h2>
+      <create-match>
+      </create-match>
+    </div>
+  </div>
+</div>

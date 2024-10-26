@@ -1,0 +1,64 @@
+<!-- Player Info Table -->
+<table class="player-info-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Beyblade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player.name }}</td>
+      <td>{{ player.beyblade }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Add Players Button -->
+<button class="add-players-button" (click)="togglePlayerEntryInfoPanel()" *ngIf="!isPlayerEntryPanelVisible">
+  Add Players
+</button>
+
+<!-- Player Entry Info Panel -->
+<div class="player-entry-info" *ngIf="isPlayerEntryPanelVisible">
+  <h3>Player Entry Info</h3>
+
+  <div class="input-group">
+    <label for="playerName">Player Name:</label>
+    <input type="text" id="playerName" [(ngModel)]="playerName" />
+  </div>
+
+  <h4>Beyblade Info</h4>
+  <table class="beyblade-info-table">
+    <thead>
+      <tr>
+        <th>Blade</th>
+        <th>Ratchet</th>
+        <th>Bit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <select [(ngModel)]="selectedBlade">
+            <option *ngFor="let blade of blades" [value]="blade">{{ blade }}</option>
+          </select>
+        </td>
+        <td>
+          <select [(ngModel)]="selectedRatchet">
+            <option *ngFor="let ratchet of ratchets" [value]="ratchet">{{ ratchet }}</option>
+          </select>
+        </td>
+        <td>
+          <select [(ngModel)]="selectedBit">
+            <option *ngFor="let bit of bits" [value]="bit">{{ bit }}</option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Add and Cancel Buttons -->
+  <button class="create-match-button" (click)="addPlayer()">Add</button>
+  <button class="create-match-button" (click)="togglePlayerEntryInfoPanel()">Cancel</button>
+</div>

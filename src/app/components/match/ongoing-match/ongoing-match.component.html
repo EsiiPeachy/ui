@@ -1,0 +1,36 @@
+<div class="current-match-panel">
+  <h3>Current Match</h3>
+  <div class="player-info">
+    <span>{{p1Name}}</span>
+    <span> VS </span>
+    <span>{{p2Name}}</span>
+  </div>
+  <div class="beyblade-info">
+    <span>{{p1Bey}}</span>
+    <span>VS</span>
+    <span>{{p2Bey}}</span>
+  </div>
+</div>
+
+<div class="upcoming-matches-panel">
+  <h3>Upcoming Matches</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Player Name</th>
+        <th>Beyblade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let match of ongoingMatches">
+        <td>{{ match.player[0].alias }}</td>
+        <td>{{ match.player[0].beys[0].blade }} {{ match.player[0].beys[0].ratchet }}{{ match.player[0].beys[0].bit }}</td>
+    </tr>
+    <tr *ngFor="let match of ongoingMatches">
+        <td>{{ match.player[1].alias }}</td>
+        <td>{{ match.player[1].beys[0].blade }} {{ match.player[1].beys[0].ratchet }}{{ match.player[1].beys[0].bit }}</td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,56 @@
+.ongoing-matches {
+  margin-top: 20px;        /* Space above the ongoing matches section */
+}
+
+.beyblade-info {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  margin: 5px 0; /* Keeps the slight vertical space between rows */
+}
+
+.beyblade-info span {
+  margin: 0 2px; /* Maintains small horizontal space between items */
+}
+
+.player-info {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  margin: 5px 0; /* Keeps the slight vertical space between rows */
+}
+
+.player-info span {
+  margin: 0 2px; /* Maintains small horizontal space between items */
+}
+
+.upcoming-matches-panel {
+  background-color: lime;  /* Lime background for the ongoing matches panel */
+  color: black;            /* Black text color for contrast */
+  padding: 10px;           /* Add padding */
+  border-radius: 8px;      /* Add rounded corners */
+  margin-top: 20px;        /* Space above the panel */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+.current-match-panel {
+  background-color: teal;  /* Teal background for the current match panel */
+  color: white;            /* White text color for contrast */
+  padding: 10px;           /* Padding inside the current match panel */
+  margin-bottom: 20px;     /* Space below the current match section */
+  border-radius: 8px;      /* Rounded corners for current match panel */
+}
+
+

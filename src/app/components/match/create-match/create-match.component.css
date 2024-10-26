@@ -1,0 +1,106 @@
+.create-match-panel {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 20px;             /* Padding inside the panel */
+  border-radius: 8px;        /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 20px;          /* Space above the panel */
+}
+
+/* Style for the Add Players button */
+.add-players-button {
+    background-color: #28a745; /* Green background */
+    color: white;              /* White text */
+    padding: 10px 20px;       /* Padding around button */
+    margin: 10px 0;            /* Margin around button */
+    border: none;              /* No border */
+    border-radius: 5px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor */
+    font-size: 16px;           /* Font size */
+}
+
+.add-players-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Player Entry Info panel */
+.player-entry-info {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd;    /* Border for the panel */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 20px;             /* Padding inside the panel */
+    margin-top: 15px;          /* Space above the panel */
+}
+
+/* Input group for label and input */
+.input-group {
+    margin-bottom: 15px;       /* Space between input fields */
+}
+
+.input-group label {
+    display: block;            /* Label takes full width */
+    font-weight: bold;        /* Bold label */
+    margin-bottom: 5px;       /* Space below label */
+}
+
+input[type="text"] {
+    width: 100%;               /* Full width text input */
+    padding: 8px;              /* Padding inside text input */
+    border: 1px solid #ddd;    /* Border for text input */
+    border-radius: 4px;        /* Rounded corners */
+}
+
+/* Beyblade Info Table */
+.beyblade-info-table h4 {
+    margin-top: 0;            /* No margin on top of header */
+    font-weight: bold;        /* Bold font */
+}
+
+/* Table styling */
+table {
+    width: 100%;               /* Full width table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    padding: 8px;              /* Padding inside table cells */
+    border: 1px solid #ddd;    /* Border for table cells */
+    text-align: left;          /* Left align text */
+}
+
+select {
+    width: 100%;               /* Full width for select dropdown */
+    padding: 6px;              /* Padding inside dropdown */
+    border-radius: 4px;        /* Rounded corners */
+    border: 1px solid #ddd;    /* Border for dropdown */
+}
+
+/* Create Match Button */
+.create-match-button {
+    background-color: #007bff; /* Blue background */
+    color: white;              /* White text */
+    padding: 10px 20px;       /* Padding around button */
+    margin: 10px 0;            /* Margin around button */
+    border: none;              /* No border */
+    border-radius: 5px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor */
+}
+
+.create-match-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.player-info-table {
+  width: 100%;               /* Full width table */
+  border-collapse: collapse; /* Collapse borders */
+  margin-bottom: 15px;       /* Space below the table */
+}
+
+.player-info-table th, .player-info-table td {
+  padding: 8px;              /* Padding inside table cells */
+  border: 1px solid #ddd;    /* Border for table cells */
+  text-align: left;          /* Left align text */
+}
+
+.player-info-table th {
+  background-color: #f2f2f2; /* Light grey background for header */
+}
